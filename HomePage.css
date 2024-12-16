@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Joan', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #cd8c38;
+    border-radius: 0.2rem;
+    color: #1e1f26;
+    transition: 0.3s;
+    border: none;
+}
+
+.right-content a.btn:last-child {
+    margin-left: 15px;
+}
+
+.btn:hover {
+    background-color: #92601f;
+}
+
+.btn-l {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: #1e1f26;
+    display: grid;
+    grid-template-columns: 1000px;
+    justify-content: space-evenly;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    background-color: white;
+}
+
+.left-content,
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-right: 3rem;
+    color: #cd8c38;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-right: 1rem;
+}
+
+.navigation li a:hover {
+    color: purple;
+}
+
+.active {
+    color: purple;
+}
+
+/* ... (existing styles) ... */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin-left: 0.9rem;
+}
+
+.btn-search {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #cd8c38;
+    border-radius: 0.2rem;
+    color: #1e1f26;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-search:hover {
+    background-color: #92601f;
+}
+
+/* Add this to the existing CSS */
+.right-content a.btn:nth-child(3) {
+    margin-left: 15px;
+    
+}
+
+
+/* ... (existing styles) ... */
+
+
+/* main container */
+
+.main-container {
+    color: #adadad;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    height: 579px;
+}
+
+.movies-title {
+    text-align: center;
+    color: #cd8c38;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+    margin: 30px auto;
+}
+
+/* movies container */
+
+.upcoming-img-box {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    margin: 30px auto;
+}
+
+.upcoming-title {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #cd8c38;
+    background-color: #1e1f26;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #cd8c38;
+    font-weight: 500;
+}
+.upcoming-img{
+
+    height: 500px;
+    width: 1000px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.btn-alt {
+    background-color: #1e1f26;
+    color: #cd8c38;
+    border: 1px solid #cd8c38;
+    margin-left: 1rem;
+}
+
+.btn-alt:hover {
+    color: #1e1f26;
+    background-color: #cd8c38;
+}
+.buttons a.btn:last-child {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.btn-trailer {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+/* current movies */
+
+.movies-container {
+    padding-bottom: 2rem;
+}
+
+.current-movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    
+}
+
+.current-movie {
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.cm-img-box {
+    position: relative;
+    height: 300px;
+    width: auto;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    
+}
+
+.cm-img{
+
+    height: 300px;
+    width: 260px;
+    border-radius: .5rem;
+    
+}
+
+.movie-title {
+    color: #fff;
+    margin-bottom: .2rem;
+}
+
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+
+
+
+/* Add this to your CSS or create a new CSS file for styling */
+
+.new-footer {
+    background-color: #1e1f26;
+    color: #adadad;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.footer-links a:hover {
+    color: #cd8c38;
+}
+
+.copyright {
+    flex: 1;
+    text-align: right;
+}
+
+/* Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Joan', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #cd8c38;
+    border-radius: 0.2rem;
+    color: #1e1f26;
+    transition: 0.3s;
+    border: none;
+}
+
+.right-content a.btn:last-child {
+    margin-left: 15px;
+}
+
+.btn:hover {
+    background-color: #92601f;
+}
+
+.btn-l {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: #1e1f26;
+    display: grid;
+    grid-template-columns: 1000px;
+    justify-content: space-evenly;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    background-color: white;
+}
+
+.left-content,
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-right: 3rem;
+    color: #cd8c38;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-right: 1rem;
+}
+
+.navigation li a:hover {
+    color: purple;
+}
+
+.active {
+    color: purple;
+}
+
+/* ... (existing styles) ... */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+.btn-search {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #cd8c38;
+    border-radius: 0.2rem;
+    color: #1e1f26;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-search:hover {
+    background-color: #92601f;
+}
+
+/* ... (existing styles) ... */
+
+/* main container */
+
+.main-container {
+    color: #adadad;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    height: 579px;
+}
+
+.movies-title {
+    text-align: center;
+    color: #cd8c38;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+    margin: 30px auto;
+}
+
+/* movies container */
+
+.upcoming-img-box {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    margin: 30px auto;
+}
+
+.upcoming-title {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #cd8c38;
+    background-color: #1e1f26;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #cd8c38;
+    font-weight: 500;
+}
+
+.upcoming-img {
+    height: 500px;
+    width: 1000px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.btn-alt {
+    background-color: #1e1f26;
+    color: #cd8c38;
+    border: 1px solid #cd8c38;
+    margin-left: 1rem;
+}
+
+.btn-alt:hover {
+    color: #1e1f26;
+    background-color: #cd8c38;
+}
+
+.buttons a.btn:last-child {
+    margin-left: 10px;
+}
+
+.btn-trailer {
+    margin-left: 10px;
+}
+
+/* current movies */
+
+.movies-container {
+    padding-bottom: 2rem;
+}
+
+.current-movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.current-movie {
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.cm-img-box {
+    position: relative;
+    height: 300px;
+    width: auto;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cm-img {
+    height: 300px;
+    width: 260px;
+    border-radius: .5rem;
+}
+
+.movie-title {
+    color: #fff;
+    margin-bottom: .2rem;
+}
+
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Add this to your CSS or create a new CSS file for styling */
+
+.new-footer {
+    background-color: #1e1f26;
+    color: #adadad;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.footer-links a:hover {
+    color: #cd8c38;
+}
+
+.copyright {
+    flex: 1;
+    text-align: right;
+}
+
+/* ... (existing styles) ... */
+
+/* Responsive styles for mobile view */
+@media only screen and (max-width: 1200px) {
+    body {
+        grid-template-columns: 1fr; /* Change grid layout to a single column for small screens */
+    }
+
+    .top-bar {
+        flex-direction: column; /* Stack items vertically for small screens */
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+    }
+
+    .title {
+        margin-right: 0;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .navigation li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr; /* Change grid layout to a single column for small screens */
+        padding: 1rem;
+    }
+
+    .upcoming-img-box, .cm-img-box {
+        width: 100%; /* Make images fill the screen width */
+    }
+
+    .upcoming-title, .movie-title, .screen-name {
+        font-size: 18px; /* Adjust font size for better readability on small screens */
+    }
+
+    .current-movies {
+        grid-template-columns: 1fr; /* Change grid layout to a single column for small screens */
+    }
+
+    .current-movie {
+        margin-bottom: 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .upcoming-img {
+        width: 100%; /* Make sure the image takes up the full width */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
+
+    .cm-img {
+        width: 100%; /* Make sure the image takes up the full width */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
+
+
+    
+}
